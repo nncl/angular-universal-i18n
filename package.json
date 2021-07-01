@@ -10,7 +10,10 @@
     "dev:ssr": "ng run angular-universal-i18n:serve-ssr",
     "serve:ssr": "node dist/angular-universal-i18n/server/main.js",
     "build:ssr": "ng build && ng run angular-universal-i18n:server",
-    "prerender": "ng run angular-universal-i18n:prerender"
+    "prerender": "ng run angular-universal-i18n:prerender",
+    "extract-i18n": "ng extract-i18n angular-universal-i18n --format xlf --output-path src/i18n && ng run angular-universal-i18n:xliffmerge",
+    "start-en": "ng serve --configuration=en",
+    "start-fr": "ng serve --configuration=fr"
   },
   "private": true,
   "dependencies": {
@@ -33,7 +36,10 @@
     "@angular-devkit/build-angular": "~12.1.0",
     "@angular/cli": "~12.1.0",
     "@angular/compiler-cli": "~12.1.0",
+    "@angular/localize": "^12.1.1",
     "@nguniversal/builders": "^12.1.0",
+    "@ngx-i18nsupport/ngx-i18nsupport": "^1.1.6",
+    "@ngx-i18nsupport/tooling": "^8.0.3",
     "@types/express": "^4.17.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",

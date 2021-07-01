@@ -64,6 +64,20 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "aot": true,
+              "outputPath": "dist/angular-universal-i18n-en",
+              "i18nFile": "src/i18n/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en"
+            },
+            "fr": {
+              "aot": true,
+              "outputPath": "dist/angular-universal-i18n-fr",
+              "i18nFile": "src/i18n/messages.fr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr"
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +90,12 @@
             },
             "development": {
               "browserTarget": "angular-universal-i18n:build:development"
+            },
+            "en": {
+              "browserTarget": "angular-universal-i18n:build:en"
+            },
+            "fr": {
+              "browserTarget": "angular-universal-i18n:build:fr"
             }
           },
           "defaultConfiguration": "development"
@@ -162,6 +182,22 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "xliffmerge": {
+          "builder": "@ngx-i18nsupport/tooling:xliffmerge",
+          "options": {
+            "xliffmergeOptions": {
+              "i18nFormat": "xlf",
+              "srcDir": "src/i18n",
+              "genDir": "src/i18n",
+              "defaultLanguage": "pt",
+              "languages": [
+                "pt",
+                "en",
+                "fr"
+              ]
+            }
+          }
         }
       }
     }
