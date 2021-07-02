@@ -1,3 +1,11 @@
 <section>
   <h1 i18n="@@homepage">Página Inicial</h1>
+
+  <ng-container *ngIf="$news | async as news; else loading">
+    <pre>{{ news | json }}</pre>
+  </ng-container>
+
+  <ng-template #loading>
+    ...
+  </ng-template>
 </section>
