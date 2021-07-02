@@ -14,7 +14,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build:ssr` in order to update all the app code through SSR.
+
+## I18N
+
+Run `npm run extract-i18n` every time you create some variable anywhere within your application. When finished, update the `i18n/*` files with its own translation.
 
 ## Running unit tests
 
