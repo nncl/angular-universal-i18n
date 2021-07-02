@@ -149,6 +149,7 @@
           "configurations": {
             "production": {
               "outputHashing": "media",
+              "localize": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
