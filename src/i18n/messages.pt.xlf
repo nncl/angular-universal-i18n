@@ -8,6 +8,24 @@
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
+      </trans-unit><trans-unit id="menuHome" datatype="html">
+        <source> Início </source><target state="final"> Início </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit><trans-unit id="menuAbout" datatype="html">
+        <source> Sobre </source><target state="final"> Sobre </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit><trans-unit id="menuNews" datatype="html">
+        <source> Notícia </source><target state="final"> Notícia </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="aboutpage" datatype="html">
         <source>Página Sobre</source><target state="final">Página Sobre</target>
